@@ -2,8 +2,6 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-
-
 let commentReplySchema = new Schema({
     commentId:{
         type:Schema.Types.ObjectId,
