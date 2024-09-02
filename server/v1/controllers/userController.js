@@ -45,7 +45,7 @@ class userController {
     }
     userLogin(data) {
         return new Promise((success, failed) => {
-            console.log("==",...data )
+            console.log("==",data )
             const { email, password } = data
             if (!email || !password) {
                 failed('please enter email and password')

@@ -43,6 +43,8 @@ UserRouter.route('/login').post((req, res) => {
   userRepo.userLogin(req.body).then(user => {
     return res.json({ success: true, data: user })
   }).catch(err => {
+    console.log("api error",err);
+    
     return res.json({ success: false, data: err })
   })
 })

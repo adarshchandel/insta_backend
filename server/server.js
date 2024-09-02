@@ -40,12 +40,12 @@ app.use((req, res, next) => {
     next();
 });
 
-// let port = process.env.PORT || 8000
+let port = process.env.PORT || 8000
 
 
-// let server = http.listen(port, () => {
-//     console.log(color.cyan('server started on ',port))
-// })
+let server = http.listen(port, () => {
+    console.log(color.cyan('server started on ',port))
+})
 
 
 app.use('/v1', v1);
